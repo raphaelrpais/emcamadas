@@ -1,0 +1,55 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  color: #222;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.em-breve {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #222;
+  text-align: center;
+}
+.em-breve .em {
+  color: #27ae60; /* Verde */
+}
+.em-breve .camadas {
+  color: #0077ff; /* Cor do "BEM VINDO" (ajuste se necessário) */
+}
+.em-breve .com {
+  color: #bbb; /* Cinza discreto/desativado */
+  font-weight: 300;
+}
+.dominio {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  color: #222;
+  text-align: center;
+}
+.dominio .em {
+  color: #27ae60;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+.dominio .camadas {
+  color: #0077ff;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+.dominio .com {
+  color: #bbb;
+  font-weight: 200;
+  text-transform: lowercase;
+}
