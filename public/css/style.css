@@ -8,10 +8,7 @@ html, body {
   font-family: 'Onest', 'Segoe UI', Arial, sans-serif;
   color: #222;
 }
-body {
-  /* Mantém apenas fonte e cor, layout controlado pelo Bootstrap */
-}
-}
+/* O layout principal é controlado pelo Bootstrap. Estilos abaixo são personalizados para identidade visual. */
 .em-breve {
   font-size: 3rem;
   font-weight: 700;
