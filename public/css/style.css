@@ -38,16 +38,8 @@ body {
   color: #222;
   text-align: center;
 }
-.dominio .em {
-  color: #27ae60;
-  font-weight: 400;
-  text-transform: lowercase;
-}
-.dominio .camadas {
-  color: #0077ff;
-  font-weight: 400;
-  text-transform: lowercase;
-}
+.dominio .em,
+.dominio .camadas,
 .dominio .com {
   color: #bbb;
   font-weight: 200;
