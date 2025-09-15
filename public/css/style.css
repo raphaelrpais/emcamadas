@@ -9,11 +9,8 @@ html, body {
   color: #222;
 }
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  /* Mantém apenas fonte e cor, layout controlado pelo Bootstrap */
+}
 }
 .em-breve {
   font-size: 3rem;
