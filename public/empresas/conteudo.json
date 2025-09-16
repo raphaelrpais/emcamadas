@@ -1,0 +1,202 @@
+{
+  "header": {
+    "titulo": "Bem-vindo ao espaço Empresas",
+    "descricao": "Em breve, conteúdo exclusivo para empresas estará disponível aqui.",
+    "botoes": [
+      { "texto": "Ação principal", "link": "#" },
+      { "texto": "Ação secundária", "link": "#" }
+    ]
+  },
+  "produtos": [
+    {
+      "id": 1,
+      "titulo": "Porta Copos Natalino",
+      "descricao": "Kit com 4 porta copos de tema natalino, inclui suporte para armazenamento.",
+      "imagem": "fim-de-ano/ec_site-empresas--img__sazonal--coastersnow.jpg",
+      "badges": ["fim de ano", "bebidas"],
+      "precos": [
+        { "qtd": 10, "valor": "R$ 59,90" },
+        { "qtd": 50, "valor": "R$ 54,90" },
+        { "qtd": 100, "valor": "R$ 49,90" },
+        { "qtd": 1000, "valor": "R$ 44,90" }
+      ],
+      "modal": {
+        "imagens": [
+          "fim-de-ano/ec_site-empresas--img__sazonal--coastersnow.jpg",
+          "fim-de-ano/ec_site-empresas--img__sazonal--coastersnow (1).jpg",
+          "fim-de-ano/ec_site-empresas--img__sazonal--coastersnow (2).jpg"
+        ],
+        "titulo": "Porta Copos Natalino"
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "Árvore de Natal de Montar",
+      "descricao": "Kit de peças para montagem da mini-árvore de Natal",
+      "imagem": "fim-de-ano/ec_site-empresas--img__sazonal--christmastree.webp",
+      "badges": ["fim de ano", "brinquedos"],
+      "precos": [
+        { "qtd": 10, "valor": "R$ 39,90" },
+        { "qtd": 50, "valor": "R$ 34,90" },
+        { "qtd": 100, "valor": "R$ 31,90" }
+      ],
+      "modal": {
+        "imagens": [
+          "fim-de-ano/ec_site-empresas--img__sazonal--christmastree.webp",
+          "fim-de-ano/ec_site-empresas--img__sazonal--christmastree(1).png",
+          "fim-de-ano/ec_site-empresas--img__sazonal--christmastree(2).png"
+        ],
+        "titulo": "Árvore de Natal de Montar"
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "Suporte de Celular e Tablet",
+      "descricao": "Suporte simples, robusto e fixo que atende a maioria dos telefones celulares e tablets. Permite conexão do carregador durante o uso.",
+      "imagem": "tecnologia/ec_site-empresas--tech__phonestand(1).jpg",
+      "badges": ["escritório", "tecnologia"],
+      "precos": [
+        { "qtd": 10, "valor": "R$ 29,90" },
+        { "qtd": 50, "valor": "R$ 27,90" }
+      ],
+      "modal": {
+        "imagens": [
+          "tecnologia/ec_site-empresas--tech__phonestand(1).jpg",
+          "tecnologia/ec_site-empresas--tech__phonestand(2).jpg",
+          "tecnologia/ec_site-empresas--tech__phonestand(3).jpg"
+        ],
+        "titulo": "Suporte de Celular e Tablet"
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "Árvore Natalina Animada",
+      "descricao": "Descrição breve do produto 1.",
+      "imagem": "fim-de-ano/ec_site-empresas--img__fimdeano--exptree(1).gif",
+      "badges": ["categoria", "tag"],
+      "precos": [
+        { "qtd": 10, "valor": "R$ --,--" },
+        { "qtd": 50, "valor": "R$ --,--" }
+      ],
+      "modal": {
+        "imagens": [
+          "fim-de-ano/ec_site-empresas--img__fimdeano--exptree(1).gif",
+          "fim-de-ano/ec_site-empresas--img__fimdeano--exptree(2).jpg",
+          "fim-de-ano/ec_site-empresas--img__fimdeano--exptree(3).jpg"
+        ],
+        "titulo": "Árvore Natalina Animada"
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "Montagem de Árvore",
+      "descricao": "Descrição breve do produto 2.",
+      "imagem": "fim-de-ano/ec_site-empresas--img__fimdeano--treebuild(1).png",
+      "badges": ["categoria", "tag"],
+      "precos": [
+        { "qtd": 10, "valor": "R$ --,--" },
+        { "qtd": 50, "valor": "R$ --,--" }
+      ],
+      "modal": {
+        "imagens": [
+          "fim-de-ano/ec_site-empresas--img__fimdeano--treebuild(1).png",
+          "fim-de-ano/ec_site-empresas--img__fimdeano--treebuild(2).png"
+        ],
+        "titulo": "Montagem de Árvore"
+      }
+    },
+    {
+      "id": 6,
+      "titulo": "Árvore com Container",
+      "descricao": "Descrição breve do produto 3.",
+      "imagem": "fim-de-ano/ec_site-empresas--img__fimdeano--treecontainer(1).jpg",
+      "badges": ["categoria", "tag"],
+      "precos": [
+        { "qtd": 10, "valor": "R$ --,--" },
+        { "qtd": 50, "valor": "R$ --,--" }
+      ],
+      "modal": {
+        "imagens": [
+          "fim-de-ano/ec_site-empresas--img__fimdeano--treecontainer(1).jpg",
+          "fim-de-ano/ec_site-empresas--img__fimdeano--treecontainer(2).jpg"
+        ],
+        "titulo": "Árvore com Container"
+      }
+    },
+    {
+      "id": 7,
+      "titulo": "Árvore Pop Natalina",
+      "descricao": "Árvore natalina com design pop, ideal para decoração criativa.",
+      "imagem": "fim-de-ano/ec_site-empresas--img__fimdeano--treepop(1).jpg",
+      "badges": ["fim de ano", "pop"],
+      "precos": [
+        { "qtd": 10, "valor": "R$ --,--" },
+        { "qtd": 50, "valor": "R$ --,--" }
+      ],
+      "modal": {
+        "imagens": [
+          "fim-de-ano/ec_site-empresas--img__fimdeano--treepop(1).jpg",
+          "fim-de-ano/ec_site-empresas--img__fimdeano--treepop(2).jpg"
+        ],
+        "titulo": "Árvore Pop Natalina"
+      }
+    },
+    {
+      "id": 8,
+      "titulo": "Enfeite Personalizado",
+      "descricao": "Enfeite natalino personalizado para nomes, ideal para presentear.",
+      "imagem": "fim-de-ano/ec_site-empresas--img__fimdeano--ornamentoname.jpg",
+      "badges": ["fim de ano", "personalizado"],
+      "precos": [
+        { "qtd": 10, "valor": "R$ --,--" },
+        { "qtd": 50, "valor": "R$ --,--" }
+      ],
+      "modal": {
+        "imagens": [
+          "fim-de-ano/ec_site-empresas--img__fimdeano--ornamentoname.jpg"
+        ],
+        "titulo": "Enfeite Personalizado"
+      }
+    },
+    {
+      "id": 9,
+      "titulo": "Mini Árvore Natalina",
+      "descricao": "Mini árvore natalina, perfeita para mesas, brindes ou decoração compacta.",
+      "imagem": "fim-de-ano/ec_site-empresas--img__fimdeano--minitree.jpg",
+      "badges": ["fim de ano", "mini árvore"],
+      "precos": [
+        { "qtd": 10, "valor": "R$ --,--" },
+        { "qtd": 50, "valor": "R$ --,--" }
+      ],
+      "modal": {
+        "imagens": [
+          "fim-de-ano/ec_site-empresas--img__fimdeano--minitree.jpg"
+        ],
+        "titulo": "Mini Árvore Natalina"
+      }
+    },
+    {
+      "id": 10,
+      "titulo": "PassTree Natalina",
+      "descricao": "PassTree: decoração natalina versátil, ideal para ambientes internos e externos.",
+      "imagem": "fim-de-ano/ec_site-empresas--img__fimdeano--passtree(1).gif",
+      "badges": ["fim de ano", "PassTree"],
+      "precos": [
+        { "qtd": 10, "valor": "R$ --,--" },
+        { "qtd": 50, "valor": "R$ --,--" }
+      ],
+      "modal": {
+        "imagens": [
+          "fim-de-ano/ec_site-empresas--img__fimdeano--passtree(1).gif",
+          "fim-de-ano/ec_site-empresas--img__fimdeano--passtree(2).jpg",
+          "fim-de-ano/ec_site-empresas--img__fimdeano--passtree(3).jpg"
+        ],
+        "titulo": "PassTree Natalina"
+      }
+    }
+  ],
+  "footer": {
+    "texto": "© Em Camadas",
+    "ano": "dinâmico"
+  }
+}

@@ -31,45 +31,37 @@
       </div>
     </section>
 
-    <!-- Album -->
-    <div class="album py-5 bg-light w-100">
-      <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="fim-de-ano/ec_site-empresas--img__sazonal--coastersnow.jpg" class="card-img-top" alt="Ilustração conteúdo 1" style="height:225px;object-fit:cover;">
-              <div class="card-body">
-                <h5 class="card-title">Porta Copos Natalino</h5>
-                <p class="card-text">Kit com 4 porta copos de tema natalino, inclui suporte para armazenamento.</p>
-                <table class="table table-hover table-sm mb-3 card-pricing" aria-label="Tabela de preços porta copos">
-                  <thead>
-                    <tr class="bg-light text-secondary small">
-                      <th scope="col">Qtd</th>
-                      <th scope="col">Preço (un.)</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr><td class="fw-light text-secondary small">10</td><td class="fw-light text-secondary small">R$ 59,90</td></tr>
-                    <tr><td class="fw-light text-secondary small">50</td><td class="fw-light text-secondary small">R$ 54,90</td></tr>
-                    <tr><td class="fw-light text-secondary small">100</td><td class="fw-light text-secondary small">R$ 49,90</td></tr>
-                    <tr><td class="fw-light text-secondary small">1000</td><td class="fw-light text-secondary small">R$ 44,90</td></tr>
-                  </tbody>
-                </table>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalCard1">VER MAIS</button>
-                  </div>
-                  <div class="ms-auto">
-                    <span class="badge bg-light text-dark">fim de ano</span>
-                    <span class="badge bg-light text-dark ms-1">bebidas</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <main role="main">
+      <!-- Header dinâmico -->
+      <section class="py-3 text-center container">
+        <div class="row">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-bold" id="header-titulo"></h1>
+            <p class="lead text-muted" id="header-descricao"></p>
+            <p id="header-botoes"></p>
           </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="fim-de-ano/ec_site-empresas--img__sazonal--christmastree.webp" class="card-img-top" alt="Árvore de Natal animada" style="height:225px;object-fit:cover;">
+        </div>
+      </section>
+
+      <!-- Grid de produtos dinâmico -->
+      <section class="container my-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="produtos-grid">
+          <!-- Cards serão gerados pelo JS -->
+        </div>
+      </section>
+
+      <!-- Modais dinâmicos -->
+      <div id="modais-container"></div>
+    </main>
+
+    <footer class="py-3 my-4 border-top bg-light">
+      <div class="container text-center">
+        <span class="text-muted" id="footer-texto">© <span id="ano-corrente"></span></span>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="conteudo.js"></script>
+  </body>
               <div class="card-body">
                 <h5 class="card-title">Árvore de Natal de Montar</h5>
                 <p class="card-text">Kit de peças para montagem da mini-árvore de Natal</p>
