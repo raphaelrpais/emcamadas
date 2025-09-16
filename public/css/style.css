@@ -24,18 +24,24 @@
   opacity: 0.7;
   background: #222 !important;
 }
+
 .modal-close-btn {
   position: absolute;
   top: 16px;
   right: 16px;
   z-index: 1055;
-  filter: none;
   background-color: transparent;
-  color: #fff;
+  color: #fff !important;
   opacity: 1;
 }
 /* Força o ícone do X do Bootstrap a ficar branco */
 .modal-close-btn svg,
+.modal-close-btn::before,
+.modal-close-btn::after {
+  color: #fff !important;
+  fill: #fff !important;
+  opacity: 1 !important;
+}
 .modal-close-btn::before,
 .modal-close-btn::after {
   color: #fff !important;
