@@ -21,5 +21,13 @@
       </div>
     </section>
   </main>
+  <footer class="py-3 my-4 border-top bg-light">
+    <div class="container text-center">
+      <span class="text-muted">© <span id="ano-corrente"></span> Emcamadas</span>
+    </div>
+    <script>
+      document.getElementById('ano-corrente').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>

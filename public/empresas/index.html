@@ -70,8 +70,8 @@
             <div class="card shadow-sm">
               <img src="fim-de-ano/ec_site-empresas--img__sazonal--christmastree.webp" class="card-img-top" alt="Árvore de Natal animada" style="height:225px;object-fit:cover;">
               <div class="card-body">
-                <h5 class="card-title">Conteúdo 2</h5>
-                <p class="card-text">Outro exemplo de conteúdo para empresas.</p>
+                <h5 class="card-title">Árvore de Natal de Montar</h5>
+                <p class="card-text">Kit de peças para montagem da mini-árvore de Natal</p>
                 <table class="table table-hover table-sm mb-3 card-pricing" aria-label="Tabela de preços conteúdo 2">
                   <thead>
                     <tr class="bg-light text-secondary small">
@@ -101,8 +101,8 @@
             <div class="card shadow-sm">
               <img src="tecnologia/ec_site-empresas--tech__phonestand(1).jpg" class="card-img-top" alt="Suporte para celular" style="height:225px;object-fit:cover;">
               <div class="card-body">
-                <h5 class="card-title">Conteúdo 3</h5>
-                <p class="card-text">Mais um exemplo de conteúdo para empresas.</p>
+                <h5 class="card-title">Suporte de Celular e Tablet</h5>
+                <p class="card-text">Suporte simples, robusto e fixo que atende a maioria dos telefones celulares e tablets. Permine conexão do carregador durante o uso.</p>
                 <table class="table table-hover table-sm mb-3 card-pricing" aria-label="Tabela de preços conteúdo 3">
                   <thead>
                     <tr class="bg-light text-secondary small">
@@ -223,5 +223,13 @@
     </div>
 
   </main>
+  <footer class="py-3 my-4 border-top bg-light">
+    <div class="container text-center">
+      <span class="text-muted">© <span id="ano-corrente"></span> Em Camadas</span>
+    </div>
+    <script>
+      document.getElementById('ano-corrente').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
