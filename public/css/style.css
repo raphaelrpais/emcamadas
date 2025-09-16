@@ -1,3 +1,47 @@
+/* Modal transparente para carrossel de imagens */
+.modal-transparent {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.modal-transparent .modal-body {
+  background: transparent !important;
+}
+.modal-transparent .carousel,
+.modal-transparent .carousel-inner,
+.modal-transparent .carousel-item,
+.modal-transparent .carousel-item img {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.modal-content {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.modal-backdrop.show {
+  opacity: 0.7;
+  background: #222 !important;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 1055;
+  filter: none;
+  background-color: transparent;
+  color: #fff;
+  opacity: 1;
+}
+/* Força o ícone do X do Bootstrap a ficar branco */
+.modal-close-btn svg,
+.modal-close-btn::before,
+.modal-close-btn::after {
+  color: #fff !important;
+  fill: #fff !important;
+  opacity: 1 !important;
+}
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800&display=swap');
 
 html, body {
