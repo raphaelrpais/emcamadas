@@ -20,12 +20,12 @@ async function carregarConteudo() {
   // Cards
   const grid = document.querySelector('#produtos-grid');
   grid.innerHTML = '';
-  data.produtos.forEach(produto => {
+  data.produtos.sort(() => Math.random() - 0.5).forEach(produto => {
     const col = document.createElement('div');
     col.className = 'col';
     col.innerHTML = `
       <div class="card shadow-sm">
-        <img src="${produto.imagem}" class="card-img-top" alt="${produto.titulo}" style="height:225px;object-fit:cover;">
+        <img src="${produto.imagem}" class="card-img-top img-modal-trigger" alt="${produto.titulo}" style="height:225px;object-fit:cover;cursor:pointer;" data-bs-toggle="modal" data-bs-target="#modalCard${produto.id}">
         <div class="card-body">
           <h5 class="card-title">${produto.titulo}</h5>
           <p class="card-text">${produto.descricao}</p>
