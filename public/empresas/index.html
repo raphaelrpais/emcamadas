@@ -21,7 +21,19 @@
 	  </section>
 	  <div class="album py-5 bg-light">
 	    <div class="container">
-	      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="produtos-grid"></div>
+				<!-- Navbar de filtro de tags -->
+				<nav class="navbar navbar-expand-lg bg-body-tertiary mb-4" id="tags-navbar">
+					<div class="container-fluid">
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTags" aria-controls="navbarTags" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarTags">
+															<ul class="navbar-nav mb-2 mb-lg-0 justify-content-center w-100" id="tags-navbar-list">
+															</ul>
+						</div>
+					</div>
+				</nav>
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="produtos-grid"></div>
 	    </div>
 	    <div id="modais-container"></div>
 	  </div>

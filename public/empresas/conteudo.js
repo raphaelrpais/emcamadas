@@ -1,5 +1,6 @@
 // JS para popular cards e modais dinamicamente a partir do conteudo.json
 
+
 async function carregarConteudo() {
   const response = await fetch('conteudo.json');
   const data = await response.json();
@@ -17,41 +18,81 @@ async function carregarConteudo() {
     botoes.appendChild(a);
   });
 
-  // Cards
-  const grid = document.querySelector('#produtos-grid');
-  grid.innerHTML = '';
-  data.produtos.sort(() => Math.random() - 0.5).forEach(produto => {
-    const col = document.createElement('div');
-    col.className = 'col';
-    col.innerHTML = `
-      <div class="card shadow-sm">
-        <img src="${produto.imagem}" class="card-img-top img-modal-trigger" alt="${produto.titulo}" style="height:225px;object-fit:cover;cursor:pointer;" data-bs-toggle="modal" data-bs-target="#modalCard${produto.id}">
-        <div class="card-body">
-          <h5 class="card-title">${produto.titulo}</h5>
-          <p class="card-text">${produto.descricao}</p>
-          <table class="table table-hover table-sm mb-3 card-pricing" aria-label="Tabela de preços ${produto.titulo}">
-            <thead>
-              <tr class="bg-light text-secondary small">
-                <th scope="col">Qtd</th>
-                <th scope="col">Preço (un.)</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${produto.precos.map(p => `<tr><td class='fw-light text-secondary small'>${p.qtd}</td><td class='fw-light text-secondary small'>${p.valor}</td></tr>`).join('')}
-            </tbody>
-          </table>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalCard${produto.id}">VER MAIS</button>
-            </div>
-            <div class="ms-auto">
-              ${produto.badges.map(b => `<span class="badge bg-light text-dark ms-1">${b}</span>`).join('')}
+  // Navbar de tags dinâmicas
+  const tagsSet = new Set();
+  data.produtos.forEach(produto => {
+    produto.badges.forEach(tag => tagsSet.add(tag));
+  });
+  const tags = Array.from(tagsSet);
+  const tagsNavbarList = document.getElementById('tags-navbar-list');
+  tagsNavbarList.innerHTML = '';
+  // Botão "Todos"
+  const liTodos = document.createElement('li');
+  liTodos.className = 'nav-item';
+  liTodos.innerHTML = '<button class="btn btn-outline-primary rounded-pill mx-1 active">Todos</button>';
+  tagsNavbarList.appendChild(liTodos);
+  // Botões de tags
+  tags.forEach(tag => {
+    const li = document.createElement('li');
+    li.className = 'nav-item';
+    li.innerHTML = `<button class="btn btn-outline-primary rounded-pill mx-1">${tag}</button>`;
+    tagsNavbarList.appendChild(li);
+  });
+
+  // Função para renderizar cards filtrados
+  function renderizarCards(produtos) {
+    const grid = document.querySelector('#produtos-grid');
+    grid.innerHTML = '';
+    produtos.forEach(produto => {
+      const col = document.createElement('div');
+      col.className = 'col';
+      col.innerHTML = `
+        <div class="card shadow-sm">
+          <img src="${produto.imagem}" class="card-img-top img-modal-trigger" alt="${produto.titulo}" style="height:225px;object-fit:cover;cursor:pointer;" data-bs-toggle="modal" data-bs-target="#modalCard${produto.id}">
+          <div class="card-body">
+            <h5 class="card-title">${produto.titulo}</h5>
+            <p class="card-text">${produto.descricao}</p>
+            <table class="table table-hover table-sm mb-3 card-pricing" aria-label="Tabela de preços ${produto.titulo}">
+              <thead>
+                <tr class="bg-light text-secondary small">
+                  <th scope="col">Qtd</th>
+                  <th scope="col">Preço (un.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${produto.precos.map(p => `<tr><td class='fw-light text-secondary small'>${p.qtd}</td><td class='fw-light text-secondary small'>${p.valor}</td></tr>`).join('')}
+              </tbody>
+            </table>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalCard${produto.id}">VER MAIS</button>
+              </div>
+              <div class="ms-auto">
+                ${produto.badges.map(b => `<span class="badge bg-light text-dark ms-1">${b}</span>`).join('')}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    `;
-    grid.appendChild(col);
+      `;
+      grid.appendChild(col);
+    });
+  }
+
+  // Renderizar todos os cards inicialmente
+  renderizarCards(data.produtos);
+
+  // Adicionar evento de filtro aos botões
+  tagsNavbarList.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      tagsNavbarList.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const tag = btn.textContent.trim();
+      if (tag === 'Todos') {
+        renderizarCards(data.produtos);
+      } else {
+        renderizarCards(data.produtos.filter(p => p.badges.includes(tag)));
+      }
+    });
   });
 
   // Modais
@@ -97,8 +138,14 @@ async function carregarConteudo() {
   });
 
   // Footer
-  document.querySelector('#footer-texto').textContent = data.footer.texto;
-  document.querySelector('#ano-corrente').textContent = new Date().getFullYear();
+  const footerTexto = document.querySelector('#footer-texto');
+  if (footerTexto) {
+    footerTexto.textContent = data.footer.texto;
+  }
+  const anoCorrente = document.querySelector('#ano-corrente');
+  if (anoCorrente) {
+    anoCorrente.textContent = new Date().getFullYear();
+  }
 }
 
 document.addEventListener('DOMContentLoaded', carregarConteudo);
