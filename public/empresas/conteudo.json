@@ -193,6 +193,22 @@
         ],
         "titulo": "PassTree Natalina"
       }
+    },
+    {
+      "id": 11,
+      "titulo": "Halloween Pumpkin Concepts V2",
+      "descricao": "Conjunto de abóboras decorativas para Halloween, ideais para impressão 3D e pintura criativa.",
+      "imagem": "halloween/ec_site-empresas--img__halloween--minipumpkin.png",
+      "badges": ["halloween", "decoração", "3D"],
+      "precos": [
+        { "qtd": 1, "valor": "Sob consulta" }
+      ],
+      "modal": {
+        "imagens": [
+          "halloween/ec_site-empresas--img__halloween--minipumpkin.png"
+        ],
+        "titulo": "Halloween Pumpkin Concepts V2"
+      }
     }
   ],
   "footer": {
