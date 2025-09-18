@@ -61,11 +61,23 @@ async function carregarConteudo() {
     tagsNavbarList.appendChild(li);
   });
 
+
+  // Função para embaralhar array
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
   // Função para renderizar cards filtrados
   function renderizarCards(produtos) {
     const grid = document.querySelector('#produtos-grid');
     grid.innerHTML = '';
-    produtos.forEach(produto => {
+    // Embaralha os produtos antes de renderizar
+    const produtosAleatorios = shuffleArray([...produtos]);
+    produtosAleatorios.forEach(produto => {
       const col = document.createElement('div');
       col.className = 'col';
       col.innerHTML = `
