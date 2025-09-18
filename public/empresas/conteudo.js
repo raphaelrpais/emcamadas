@@ -8,13 +8,35 @@ async function carregarConteudo() {
   // Header
   document.querySelector('#header-titulo').textContent = data.header.titulo;
   document.querySelector('#header-descricao').textContent = data.header.descricao;
+  // Renderiza CTA secundário se existir
+  let ctaEl = document.querySelector('#header-cta');
+  if (!ctaEl) {
+    ctaEl = document.createElement('div');
+    ctaEl.id = 'header-cta';
+    ctaEl.className = 'small text-secondary mb-3';
+    document.querySelector('#header-descricao').after(ctaEl);
+  }
+  ctaEl.textContent = data.header.cta || '';
   const botoes = document.querySelector('#header-botoes');
   botoes.innerHTML = '';
   data.header.botoes.forEach(btn => {
     const a = document.createElement('a');
-    a.className = 'btn btn-primary my-2';
-    a.href = btn.link;
-    a.textContent = btn.texto;
+    // Detecta botão WhatsApp pelo texto ou link
+    if (btn.texto.toLowerCase().includes('whatsapp') || btn.link.includes('wa.me')) {
+      a.className = 'btn my-2 btn-success d-flex align-items-center gap-2';
+      a.href = btn.link;
+      a.target = '_blank';
+      a.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M13.601 2.326A7.956 7.956 0 0 0 8.002.001C3.582.001.001 3.582.001 8c0 1.409.368 2.781 1.064 3.991L.06 15.925l4.06-1.064A7.96 7.96 0 0 0 8.002 16c4.418 0 7.999-3.581 7.999-7.999a7.96 7.96 0 0 0-2.4-5.675zM8.002 14.545a6.52 6.52 0 0 1-3.356-.92l-.24-.143-2.406.632.646-2.345-.156-.241A6.52 6.52 0 0 1 1.457 8c0-3.604 2.94-6.544 6.545-6.544 1.747 0 3.389.682 4.625 1.92a6.52 6.52 0 0 1 1.92 4.624c0 3.605-2.94 6.545-6.545 6.545zm3.688-4.927c-.202-.101-1.195-.59-1.38-.658-.185-.067-.32-.101-.454.101-.134.202-.52.658-.638.793-.117.134-.235.151-.437.05-.202-.101-.853-.314-1.626-.998-.601-.535-1.008-1.197-1.127-1.399-.118-.202-.013-.311.088-.412.09-.089.202-.235.303-.352.101-.117.134-.202.202-.336.067-.134.034-.252-.017-.353-.05-.101-.454-1.096-.622-1.501-.164-.395-.331-.341-.454-.347-.117-.005-.252-.006-.387-.006a.747.747 0 0 0-.542.252c-.185.202-.707.692-.707 1.688 0 .995.723 1.957.823 2.093.101.134 1.425 2.176 3.457 2.963.484.166.861.265 1.156.34.485.123.927.106 1.276.064.389-.047 1.195-.489 1.364-.96.168-.471.168-.874.118-.96-.05-.085-.185-.134-.387-.235z"/>
+        </svg>
+        <span>WhatsApp</span>
+      `;
+    } else {
+      a.className = 'btn btn-primary my-2';
+      a.href = btn.link;
+      a.textContent = btn.texto;
+    }
     botoes.appendChild(a);
   });
 

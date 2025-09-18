@@ -1,10 +1,10 @@
 {
   "header": {
     "titulo": "Bem-vindo ao espaço Empresas",
-    "descricao": "Em breve, conteúdo exclusivo para empresas estará disponível aqui.",
+  "descricao": "Aqui você encontra produtos corporativos e soluções personalizadas para sua empresa.",
+  "cta": "Fale agora com nosso time pelo WhatsApp, tire suas dúuvidas e peça um orçamento!",
     "botoes": [
-      { "texto": "Ação principal", "link": "#" },
-      { "texto": "Ação secundária", "link": "#" }
+  { "texto": "WhatsApp", "link": "https://wa.me/5521998688448?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20produtos%20corporativos." }
     ]
   },
   "produtos": [
