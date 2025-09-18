@@ -15,10 +15,10 @@
       "imagem": "fim-de-ano/ec_site-empresas--img__sazonal--coastersnow.jpg",
       "badges": ["fim de ano", "bebidas"],
       "precos": [
-        { "qtd": 10, "valor": "R$ 59,90" },
-        { "qtd": 50, "valor": "R$ 54,90" },
-        { "qtd": 100, "valor": "R$ 49,90" },
-        { "qtd": 1000, "valor": "R$ 44,90" }
+        { "qtd": 10, "valor": "Sob consulta" },
+        { "qtd": 50, "valor": "Sob consulta" },
+        { "qtd": 100, "valor": "Sob consulta" },
+        { "qtd": 1000, "valor": "Sob consulta" }
       ],
       "modal": {
         "imagens": [
@@ -36,9 +36,10 @@
       "imagem": "fim-de-ano/ec_site-empresas--img__sazonal--christmastree.webp",
       "badges": ["fim de ano", "interativo"],
       "precos": [
-        { "qtd": 10, "valor": "R$ 39,90" },
-        { "qtd": 50, "valor": "R$ 34,90" },
-        { "qtd": 100, "valor": "R$ 31,90" }
+        { "qtd": 10, "valor": "Sob consulta" },
+        { "qtd": 50, "valor": "Sob consulta" },
+        { "qtd": 100, "valor": "Sob consulta" },
+        { "qtd": 1000, "valor": "Sob consulta" }
       ],
       "modal": {
         "imagens": [
@@ -56,8 +57,10 @@
       "imagem": "tecnologia/ec_site-empresas--tech__phonestand(1).jpg",
       "badges": ["escritório", "tecnologia"],
       "precos": [
-        { "qtd": 10, "valor": "R$ 29,90" },
-        { "qtd": 50, "valor": "R$ 27,90" }
+        { "qtd": 10, "valor": "Sob consulta" },
+        { "qtd": 50, "valor": "Sob consulta" },
+        { "qtd": 100, "valor": "Sob consulta" },
+        { "qtd": 1000, "valor": "Sob consulta" }
       ],
       "modal": {
         "imagens": [
@@ -75,8 +78,10 @@
       "imagem": "fim-de-ano/ec_site-empresas--img__fimdeano--exptree(1).gif",
       "badges": ["fim de ano", "interativo"],
       "precos": [
-        { "qtd": 10, "valor": "R$ --,--" },
-        { "qtd": 50, "valor": "R$ --,--" }
+        { "qtd": 10, "valor": "Sob consulta" },
+        { "qtd": 50, "valor": "Sob consulta" },
+        { "qtd": 100, "valor": "Sob consulta" },
+        { "qtd": 1000, "valor": "Sob consulta" }
       ],
       "modal": {
         "imagens": [
@@ -94,8 +99,10 @@
       "imagem": "fim-de-ano/ec_site-empresas--img__fimdeano--treebuild(1).png",
       "badges": ["categoria", "interativo"],
       "precos": [
-        { "qtd": 10, "valor": "R$ --,--" },
-        { "qtd": 50, "valor": "R$ --,--" }
+        { "qtd": 10, "valor": "Sob consulta" },
+        { "qtd": 50, "valor": "Sob consulta" },
+        { "qtd": 100, "valor": "Sob consulta" },
+        { "qtd": 1000, "valor": "Sob consulta" }
       ],
       "modal": {
         "imagens": [
@@ -112,8 +119,10 @@
       "imagem": "fim-de-ano/ec_site-empresas--img__fimdeano--treecontainer(1).jpg",
       "badges": ["fim de ano", "utilidade"],
       "precos": [
-        { "qtd": 10, "valor": "R$ --,--" },
-        { "qtd": 50, "valor": "R$ --,--" }
+        { "qtd": 10, "valor": "Sob consulta" },
+        { "qtd": 50, "valor": "Sob consulta" },
+        { "qtd": 100, "valor": "Sob consulta" },
+        { "qtd": 1000, "valor": "Sob consulta" }
       ],
       "modal": {
         "imagens": [
@@ -130,8 +139,10 @@
       "imagem": "fim-de-ano/ec_site-empresas--img__fimdeano--treepop(1).jpg",
       "badges": ["fim de ano", "interativo"],
       "precos": [
-        { "qtd": 10, "valor": "R$ --,--" },
-        { "qtd": 50, "valor": "R$ --,--" }
+        { "qtd": 10, "valor": "Sob consulta" },
+        { "qtd": 50, "valor": "Sob consulta" },
+        { "qtd": 100, "valor": "Sob consulta" },
+        { "qtd": 1000, "valor": "Sob consulta" }
       ],
       "modal": {
         "imagens": [
@@ -148,8 +159,10 @@
       "imagem": "fim-de-ano/ec_site-empresas--img__fimdeano--ornamentoname.jpg",
       "badges": ["fim de ano"],
       "precos": [
-        { "qtd": 10, "valor": "R$ --,--" },
-        { "qtd": 50, "valor": "R$ --,--" }
+        { "qtd": 10, "valor": "Sob consulta" },
+        { "qtd": 50, "valor": "Sob consulta" },
+        { "qtd": 100, "valor": "Sob consulta" },
+        { "qtd": 1000, "valor": "Sob consulta" }
       ],
       "modal": {
         "imagens": [
@@ -165,8 +178,10 @@
       "imagem": "fim-de-ano/ec_site-empresas--img__fimdeano--minitree.jpg",
       "badges": ["fim de ano"],
       "precos": [
-        { "qtd": 10, "valor": "R$ --,--" },
-        { "qtd": 50, "valor": "R$ --,--" }
+        { "qtd": 10, "valor": "Sob consulta" },
+        { "qtd": 50, "valor": "Sob consulta" },
+        { "qtd": 100, "valor": "Sob consulta" },
+        { "qtd": 1000, "valor": "Sob consulta" }
       ],
       "modal": {
         "imagens": [
@@ -182,8 +197,10 @@
       "imagem": "fim-de-ano/ec_site-empresas--img__fimdeano--passtree(1).gif",
       "badges": ["fim de ano", "interativo"],
       "precos": [
-        { "qtd": 10, "valor": "R$ --,--" },
-        { "qtd": 50, "valor": "R$ --,--" }
+        { "qtd": 10, "valor": "Sob consulta" },
+        { "qtd": 50, "valor": "Sob consulta" },
+        { "qtd": 100, "valor": "Sob consulta" },
+        { "qtd": 1000, "valor": "Sob consulta" }
       ],
       "modal": {
         "imagens": [
@@ -196,18 +213,21 @@
     },
     {
       "id": 11,
-      "titulo": "Halloween Pumpkin Concepts V2",
-      "descricao": "Conjunto de abóboras decorativas para Halloween",
+      "titulo": "Mini Abóboras Halloween",
+      "descricao": "Conjunto de abóboras decorativas com várias carinhas para Halloween",
       "imagem": "halloween/ec_site-empresas--img__halloween--minipumpkin.png",
       "badges": ["halloween"],
       "precos": [
-        { "qtd": 1, "valor": "Sob consulta" }
+        { "qtd": 10, "valor": "Sob consulta" },
+        { "qtd": 50, "valor": "Sob consulta" },
+        { "qtd": 100, "valor": "Sob consulta" },
+        { "qtd": 1000, "valor": "Sob consulta" }
       ],
       "modal": {
         "imagens": [
           "halloween/ec_site-empresas--img__halloween--minipumpkin.png"
         ],
-        "titulo": "Halloween Pumpkin Concepts V2"
+        "titulo": "Mini Abóboras Halloween"
       }
     }
   ],
