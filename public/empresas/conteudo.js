@@ -8,7 +8,7 @@ async function carregarConteudo() {
   // Header
   document.querySelector('#header-titulo').textContent = data.header.titulo;
   document.querySelector('#header-descricao').textContent = data.header.descricao;
-  // Renderiza CTA secundário se existir
+  // Renderiza CTA secundário se existir e posiciona features entre descrição e CTA
   let ctaEl = document.querySelector('#header-cta');
   if (!ctaEl) {
     ctaEl = document.createElement('div');
@@ -16,6 +16,18 @@ async function carregarConteudo() {
     ctaEl.className = 'small text-secondary mb-3';
     document.querySelector('#header-descricao').after(ctaEl);
   }
+  // Inserir linha de features com ícones de check logo antes do CTA
+  let featuresEl = document.querySelector('#header-features');
+  if (!featuresEl) {
+    featuresEl = document.createElement('div');
+    featuresEl.id = 'header-features';
+    featuresEl.className = 'small text-secondary mb-2';
+  }
+  const checkIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#198754" viewBox="0 0 16 16" style="margin-right:4px;">\n  <path d="M13.485 1.929a.75.75 0 0 1 1.06 1.06l-8 8a.75.75 0 0 1-1.06 0l-3-3a.75.75 0 1 1 1.06-1.06L6 9.439l7.485-7.51z"/>\n</svg>';
+  const features = Array.isArray(data.header.features) ? data.header.features : [];
+  featuresEl.innerHTML = features.map(f => `${checkIcon}<span class="me-3">${f}</span>`).join('');
+  // Garante a ordem: título -> descrição -> features -> CTA
+  ctaEl.before(featuresEl);
   ctaEl.textContent = data.header.cta || '';
   const botoes = document.querySelector('#header-botoes');
   botoes.innerHTML = '';
