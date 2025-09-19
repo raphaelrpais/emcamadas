@@ -229,6 +229,26 @@
         ],
         "titulo": "Mini Abóboras Halloween"
       }
+    },
+    {
+      "id": 12,
+      "titulo": "Candy Ghost",
+      "descricao": "Fantasminha decorativo de Halloween, ideal para brindes e decoração temática.",
+      "imagem": "halloween/ec_site-empresas--img__halloween--candyghost.webp",
+      "badges": ["halloween", "utilidade"],
+      "precos": [
+        { "qtd": 10, "valor": "Sob consulta" },
+        { "qtd": 50, "valor": "Sob consulta" },
+        { "qtd": 100, "valor": "Sob consulta" },
+        { "qtd": 1000, "valor": "Sob consulta" }
+      ],
+      "modal": {
+        "imagens": [
+          "halloween/ec_site-empresas--img__halloween--candyghost.webp",
+          "halloween/ec_site-empresas--img__halloween--candyghost(1).webp"
+        ],
+        "titulo": "Candy Ghost"
+      }
     }
   ],
   "footer": {
