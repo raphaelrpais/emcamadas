@@ -59,6 +59,12 @@ html, body {
   color: #222;
 }
 /* O layout principal é controlado pelo Bootstrap. Estilos abaixo são personalizados para identidade visual. */
+.header-features, #header-features {
+  border-top: 1px solid var(--bs-border-color, rgba(0,0,0,.125));
+  border-bottom: 1px solid var(--bs-border-color, rgba(0,0,0,.125));
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
 .em-breve {
   font-size: 3rem;
   font-weight: 700;
