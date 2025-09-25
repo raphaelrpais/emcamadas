@@ -58,15 +58,15 @@
     },
     {
       "id": 3,
-      "titulo": "Suporte de Celular e Tablet",
-      "descricao": "Suporte simples, robusto e fixo que atende a maioria dos telefones celulares e tablets. Permite conexão do carregador durante o uso.",
+      "titulo": "Suporte de Celular Wavy",
+      "descricao": "Suporte simples, robusto e fixo que atende a maioria dos telefones celulares e tablets mesmo com capinha. Permite conexão do carregador durante o uso.",
       "imagem": "tecnologia/ec_site-empresas--tech__phonestand(1).jpg",
       "badges": ["escritório", "tecnologia"],
       "precos": [
-        { "qtd": 10, "valor": "Sob consulta" },
-        { "qtd": 50, "valor": "Sob consulta" },
-        { "qtd": 100, "valor": "Sob consulta" },
-        { "qtd": 1000, "valor": "Sob consulta" }
+        { "qtd": 10, "valor": "32" },
+        { "qtd": 50, "valor": "28" },
+        { "qtd": 100, "valor": "24" },
+        { "qtd": 1000, "valor": "20" }
       ],
       "modal": {
         "imagens": [
